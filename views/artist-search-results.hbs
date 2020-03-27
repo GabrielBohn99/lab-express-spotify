@@ -1,0 +1,16 @@
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        {{#each dataAll}}
+        <div class="col">
+                <div class="card card-spacing">
+                    <img class="card-img-top" src={{this.images.0.url}} alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{{this.name}}</b></h5>
+                        <a class="btn btn-primary" href=/albums/{{this.id}} role="button">View albums</a>
+                    </div>
+                </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
